@@ -14,7 +14,7 @@
         android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="Enter first number"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/number2Text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="Enter second number"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/number1Text"
         app:layout_constraintTop_toBottomOf="@+id/number1Text" />

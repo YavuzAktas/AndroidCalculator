@@ -25,38 +25,78 @@ public class MainActivity extends AppCompatActivity {
 
     public void sum(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
-        int result = number1 + number2;
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        resultText.setText("Result : " + result);
+            resultText.setText("You entered wrong value");
+        }
+
+        else{
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 + number2;
+
+            resultText.setText("Result : " + result);
+        }
     }
 
     public void subtract(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
-        int result = number1 - number2;
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        resultText.setText("Result : " + result);
+            resultText.setText("You entered wrong value");
+        }
+
+        else{
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 - number2;
+
+            resultText.setText("Result : " + result);
+        }
     }
 
     public void multiply(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
-        int result = number1 * number2;
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        resultText.setText("Result : " + result);
+            resultText.setText("You entered wrong value");
+        }
+
+        else{
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 * number2;
+
+            resultText.setText("Result : " + result);
+        }
 
     }
 
     public void divide(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
-        int result = number1 / number2;
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        resultText.setText("Result : " + result);
+            resultText.setText("You entered wrong value");
+        }
+
+        else{
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 / number2;
+
+            if(number1 == 0 || number2 == 0){
+
+                resultText.setText("You can't enter the number zero");
+            }
+            else{
+
+                resultText.setText("Result : " + result);
+            }
+        }
     }
+
 }
